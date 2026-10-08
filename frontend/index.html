@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CVForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #f0f2f5;
+      --surface:  #ffffff;
+      --surface2: #f7f8fa;
+      --border:   #d0d5dd;
+      --border2:  #b0b7c3;
+      --text:     #101828;
+      --text2:    #344054;
+      --text3:    #667085;
+      --blue:     #1570ef;
+      --blue-lt:  #eff4ff;
+      --blue-bd:  #b2ccff;
+      --green:    #079455;
+      --green-lt: #ecfdf3;
+      --green-bd: #abefc6;
+      --purple:   #6941c6;
+      --purple-lt:#f9f5ff;
+      --purple-bd:#d9d6fe;
+      --orange:   #b54708;
+      --orange-lt:#fffaeb;
+      --orange-bd:#fedf89;
+      --red:      #d92d20;
+      --red-lt:   #fef3f2;
+      --red-bd:   #fecdca;
+      --shadow-sm: 0 1px 3px rgba(16,24,40,0.10), 0 1px 2px rgba(16,24,40,0.06);
+      --shadow:    0 4px 8px -2px rgba(16,24,40,0.10), 0 2px 4px -2px rgba(16,24,40,0.06);
+      --shadow-md: 0 12px 16px -4px rgba(16,24,40,0.08), 0 4px 6px -2px rgba(16,24,40,0.03);
+      --radius:    10px;
+    }
+
+    .dark {
+      --bg:       #0d0f14;
+      --surface:  #161a23;
+      --surface2: #1e2330;
+      --border:   #2d3448;
+      --border2:  #3d4561;
+      --text:     #f2f4f7;
+      --text2:    #c8cdd9;
+      --text3:    #7a8299;
+      --blue:     #4d9ff8;
+      --blue-lt:  #0d1f3c;
+      --blue-bd:  #1e3a6e;
+      --green:    #3dd68c;
+      --green-lt: #0a2119;
+      --green-bd: #1a4d33;
+      --purple:   #a78bfa;
+      --purple-lt:#1a1030;
+      --purple-bd:#3b2a6e;
+      --orange:   #fdb022;
+      --orange-lt:#2a1a00;
+      --orange-bd:#5a3800;
+      --red:      #f97066;
+      --red-lt:   #2a0a08;
+      --red-bd:   #6e1c18;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+      --shadow:    0 4px 8px rgba(0,0,0,0.35);
+      --shadow-md: 0 12px 24px rgba(0,0,0,0.4);
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.6;
+      transition: background 0.25s, color 0.25s;
+    }
+    input, textarea, select, button { font-family: inherit; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
